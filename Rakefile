@@ -15,7 +15,7 @@ namespace :db do
   task :migrate => :environment do 
     Student.create_table 
   end
-  desc 'drop into the Pry console'
+  
   task :environment do 
     require_relative './config/environment'
   end
@@ -23,6 +23,7 @@ namespace :db do
   task :seed do 
     require_relative './db/seeds.rb'
   end
+  
 end
 
 
